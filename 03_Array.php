@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-    <title>Arrays in PHP</title>
+    <title>03_Arrays in PHP</title>
 </head>
 
 <body>

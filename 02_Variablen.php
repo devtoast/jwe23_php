@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-    <title>Variablen mit PHP</title>
+    <title>02_Variablen mit PHP</title>
 </head>
 
 <body>

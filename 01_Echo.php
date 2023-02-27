@@ -3,7 +3,7 @@
 
 <head>
     <!-- PHP darf überall stehen-->
-    <title><?php echo "Echo mit PHP"; ?></title>
+    <title><?php echo "01_Echo mit PHP"; ?></title>
 </head>
 
 <body>

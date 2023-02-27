@@ -2,7 +2,7 @@
 <html lang="de">
 
 <head>
-    <title>Eigene Funktionen</title>
+    <title>07_Eigene Funktionen</title>
 </head>
 
 <h1>Eigene Funktionen</h1>
