@@ -43,7 +43,7 @@
     $text5 = "Das ist <strong>fett</strong> und <em>kursiv</em>.";
     echo strip_tags($text5);
     echo "<br>";
-    echo strip_tags($text, "<strong>");
+    echo strip_tags($text5, "<strong>");
     echo "<br>";
 
 
@@ -61,7 +61,7 @@
     echo "<br>";
 
 
-    // Teil eines Strings extrahieren 
+    // Teil eines Strings extrahieren – "substr"
     $text8 = "Ich bin 43 Jahre alt.";
     // Gib 43 aus
     echo substr($text8, 8, 2);
