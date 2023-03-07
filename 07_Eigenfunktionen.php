@@ -88,11 +88,9 @@ function text_abschneiden($text_lang)
 
     if ($text_length >= 10) {
         return "{$text_lang}...";
-    } 
-    else if ($text_length <= 10) {
+    } else if ($text_length <= 10) {
         return "{$text_lang}";
-    }
-    else {
+    } else {
     }
 
     //return "";
@@ -115,9 +113,7 @@ function text_abschneiden2($text_lang)
 
     if ($text_length >= 10) {
         return substr($text_lang, 0, 10) . "...";
-    } 
-
-    else {
+    } else {
         return "{$text_lang}";
     }
 
@@ -139,12 +135,9 @@ function text_abschneiden3($text_lang, $laenge = 10) // 2ter Parameter Default V
 
     if ($text_length > $laenge) {
         return substr($text_lang, 0, $laenge) . "...";
-    } 
-
-    else {
+    } else {
         return $text_lang;
     }
-
 }
 
 $text3 = "123456";
