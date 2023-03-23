@@ -40,14 +40,14 @@ $nav_punkte = array(
 
 
 echo "<nav><ul>";
-foreach ($nav_punkte as $href => $nav_punkt ) {
-echo "<li";
-if ($seite == $href) {
-    echo " class= 'active'";
-}
-echo ">";
-// echo "<a href='?seite={$href}'>{$nav_punkt}</a>"; // 2. Variante
-echo "<a href='?seite=". $href . "'>" .$nav_punkt."</a>";  // ACHTUNG "seite" muss ident mit index.php (GET) sein
-echo "</li>";
+foreach ($nav_punkte as $href => $nav_punkt) {
+    echo "<li";
+    if ($seite == $href) {
+        echo " class= 'active'";
+    }
+    echo ">";
+    // echo "<a href='?seite={$href}'>{$nav_punkt}</a>"; // 2. Variante
+    echo "<a href='?seite=" . $href . "'>" . $nav_punkt . "</a>";  // ACHTUNG "seite" muss ident mit index.php (GET) sein
+    echo "</li>";
 }
 echo "</ul></nav>";

@@ -42,7 +42,22 @@
 
     echo "<br>";
 
-    // FOR-SCHLEIFE
+    //
+
+    $nav_punkte = array(
+        "home" => "Startseite", // Assoziatives Array – Index ist "home"
+        "kontakt" => "Kontakt",
+        "leistungen" => "Leistungen",
+        "oeffnungszeiten" => "Öffnungszeiten",
+    );
+
+    foreach ($nav_punkte as $href => $nav_punkt) {
+        echo $href . ". ";
+        echo ($nav_punkt);
+        echo "<br>";
+    }
+
+    echo "<br>";
 
 
 
