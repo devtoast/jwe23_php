@@ -4,13 +4,13 @@
 const MYSQL_HOST = "localhost";
 const MYSQL_USER = "root";
 const MYSQL_PASSWORT = "";
-const MYSQL_DATENBANK = "php3";
+const MYSQL_DATENBANK = "php3_markus";
 
 // Setup-Code: Nur verändern wenn du weißt, was du tust.
 session_start();
 
 spl_autoload_register(
-    function(string $klasse) {
+    function (string $klasse) {
         // Projekt-spezifisches namespace prefix
         $prefix = "WIFI\\Fdb\\";
 
@@ -28,7 +28,7 @@ spl_autoload_register(
 
         // Dateipfad erstellen
         $datei = $basis . str_replace("\\", "/", $relativ) . ".php";
- 
+
         // Wenn die Datei existiert, einbinden.
         if (file_exists($datei)) {
             include $datei;
@@ -36,12 +36,11 @@ spl_autoload_register(
     }
 );
 
-function ist_eingeloggt() {
-    if ( empty($_SESSION["eingeloggt"]) ) {
+function ist_eingeloggt()
+{
+    if (empty($_SESSION["eingeloggt"])) {
         // benutzer nicht eingeloggt -> umleiten zu login
         header("Location: login.php");
         exit;
     }
 }
-
-
