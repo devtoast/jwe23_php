@@ -78,7 +78,7 @@ if ($erfolg) {
                     if (!empty($_POST["marken_id"]) && $_POST["marken_id"] == $marke->id) {
                         echo " selected";
                     } else if (!empty($fahrzeug) && $fahrzeug->marken_id == $marke->id) {
-                        echo " selected";
+                        echo " selected"; // Vorausfüllen?
                     }
                     echo ">{$marke->hersteller}</option>";
                 }

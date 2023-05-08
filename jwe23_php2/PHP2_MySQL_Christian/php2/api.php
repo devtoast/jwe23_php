@@ -76,6 +76,8 @@ if ($parameter[0] == "zutaten") {
       fehler("Mit der id '{$parameter[1]}' wurde kein Rezept gefunden.");
     }
     $ausgabe["rezept"] = $rezept;
+    //////////////////////////////////////////////
+
     // Benutzerdaten ermitteln und an Ausgabe anhängen
     $result = query("SELECT id, benutzername, email FROM benutzer WHERE id = '{$rezept["benutzer_id"]}' ");
     $ausgabe["benutzer"] = mysqli_fetch_assoc($result);
@@ -89,7 +91,7 @@ if ($parameter[0] == "zutaten") {
     while ($zutat = mysqli_fetch_assoc($result)) {
       $ausgabe["zutaten"][] = $zutat;
     }
-
+    /////////////////////////////////////////////
     echo json_encode($ausgabe);
     exit;
   } else {

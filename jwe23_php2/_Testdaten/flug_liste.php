@@ -6,7 +6,7 @@ include "kopf.php";
 
 <?php
 
-$result = query("SELECT * FROM fluege WHERE abflug >= NOW() ORDER BY abflug ASC");
+$result = query("SELECT * FROM fluege /*WHERE abflug >= NOW()*/ ORDER BY abflug ASC");
 //WHERE abflug >= NOW()
 
 echo "<table style='border: 0; margin-left: 1%; width: 100%; text-align: left'>";

@@ -16,7 +16,7 @@ if (!empty($_POST)) {
     // Flug hinzufügen
     $sql_flug_id = escape($_POST["flug"]);
 
-    // var_dump($_POST);
+    //var_dump($_POST);
     /*
     echo "<pre>";
     var_dump($sql_vorname);

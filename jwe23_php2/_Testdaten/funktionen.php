@@ -6,14 +6,16 @@ mysqli_set_charset($db, "utf8");
 
 
 // Kurzform für mysqli_query
-function query($statement) {
+function query($statement)
+{
   global $db;
-  $result = mysqli_query($db, $statement) or die(mysqli_error($db)."<br />".$statement);
+  $result = mysqli_query($db, $statement) or die(mysqli_error($db) . "<br />" . $statement);
   return $result;
 }
 
 // Escape-Funktion um SQL-Injections zu vermeiden
-function escape($input) {
+function escape($input)
+{
   global $db;
 
   if (is_array($input)) {
